@@ -11,7 +11,7 @@ jobs:
 
     runs-on: ubuntu-latest
     env:
-      SHARING_DATA: ./SharingData.txt
+      SHARING_DATA: $GITHUB_WORKSPACE/SharingData.txt
 
     steps:
     - uses: actions/checkout@v2
