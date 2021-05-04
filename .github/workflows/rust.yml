@@ -10,10 +10,7 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-    env:
-      SHARING_DATA: ./SharingData.txt
-
     steps:
     - uses: actions/checkout@v2
     - name: Build
-      run: cargo build --verbose
+      run: SHARING_DATA=$GITHUB_WORKSPACE/SharingData.txt cargo build --verbose
