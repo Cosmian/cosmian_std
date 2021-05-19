@@ -1,6 +1,6 @@
 [package]
 name = "cosmian_std"
-version = "0.1.3"
+version = "0.1.4"
 authors = ["Benjamin Coenen <benjamin.coenen@cosmian.com>"]
 edition = "2018"
 description = "Cosmian std lib to write Rust MPC programs with easier abstractions and helpers"
@@ -11,8 +11,8 @@ readme = "README.md"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-scale = { package = "scale-core", version = "0.1.1" }
-scale_std = { version = "0.1.0" }
+scale = { package = "scale-core", version = "0.1" }
+scale_std = { version = "0.1" }
 
 # Need for emulation mode
 serde_json = { version = "1.0.61", optional = true }
